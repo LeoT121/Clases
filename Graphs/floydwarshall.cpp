@@ -1,4 +1,3 @@
-long long int inf = 1e18;
 //Esta funcion recibe como parametros el grafo en un vector de pairs
 //El first es el nodo y el second es el peso de la arista
 
