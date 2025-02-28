@@ -12,7 +12,7 @@ vector<long long int> dijkstra(vector<vector<pair<int, long long int>>> & graph,
     while(!pq.empty()){
         int u;
         long long int w;
-        tie(u, w) = pq.top();
+        tie(w, u) = pq.top();
         pq.pop();
         if(dist[u] != w) continue;
         for(auto & [v, w] : graph[u]){
