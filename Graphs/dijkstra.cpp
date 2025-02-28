@@ -18,7 +18,7 @@ vector<long long int> dijkstra(vector<vector<pair<int, long long int>>> & graph,
         for(auto & [v, w] : graph[u]){
             if(dist[v] > dist[u] + w){
                 dist[v] = dist[u] + w;
-                pq.push({v, dist[v]});
+                pq.push({dist[v], v});
             }
         }
     }
